@@ -1,6 +1,6 @@
 package com.example.preproject3_1_4.model;
 
-import lombok.Data;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

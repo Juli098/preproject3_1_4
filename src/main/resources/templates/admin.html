@@ -76,7 +76,7 @@
 
                     <div class="container-fluid border bg-white py-3 px-4">
 
-                        <table class="table table-striped border-top" >
+                        <table class="table table-striped border-top">
                             <thead>
                             <tr>
                                 <th scope="col">ID</th>
@@ -116,25 +116,30 @@
                             <form id="addForm">
                                 <div class="row mb-3">
                                     <label for="username" class="form-label text-center"><b>Username
-                                        </b></label>
-                                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+                                    </b></label>
+                                    <input type="text" class="form-control" name="username" id="username"
+                                           placeholder="Username" required>
                                 </div>
 
                                 <div class="row mb-3">
                                     <label for="age" class="form-label text-center"><b>Age</b></label>
-                                    <input type="number" class="form-control" name="age" id="age" placeholder="Age" min="0" required>
+                                    <input type="number" class="form-control" name="age" id="age" placeholder="Age"
+                                           min="0" required>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="email" class="form-label text-center"><b>Email</b></label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                           required>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="password" class="form-label text-center"><b>Password</b></label>
-                                    <input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
+                                    <input type="text" class="form-control" name="password" id="password"
+                                           placeholder="Password" required>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="rolesId" class="form-label text-center"><b>Role</b></label>
-                                    <select name="rolesId" class="form-select" size="2" multiple aria-label="rolesId" id="rolesId" required>
+                                    <select name="rolesId" class="form-select" size="2" multiple aria-label="rolesId"
+                                            id="rolesId" required>
                                         <option value="1 ADMIN">ADMIN</option>
                                         <option value="2 USER">USER</option>
                                     </select>
@@ -148,112 +153,123 @@
                 </div>
 
             </div>
-        </div>
-    </div>
-</div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="ModalEdit" tabindex="-1" aria-labelledby="ModalEdit" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <form class="modal-form" id="formEdit">
-                <div class="form-group col-6 container-sm bg-white justify-content-center">
-                    <div class="modal-body">
-                        <div class="form-group row mb-3">
-                            <label for="userId" class="form-label text-center"><b>ID</b></label>
-                            <input type="number" class="form-control" name="id" id="userId" readonly>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userUsername" class="form-label text-center"><b>Username</b></label>
-                            <input type="text" class="form-control" name="username" id="userUsername" required>
-
-                        <div class="form-group row mb-3">
-                            <label for="userEmail" class="form-label text-center"><b>Email</b></label>
-                            <input type="email" class="form-control" name="email" id="userEmail" min="0" required>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userAge" class="form-label text-center"><b>Age</b></label>
-                            <input type="number" class="form-control" name="age" id="userAge" required>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userPassword" class="form-label text-center"><b>Password</b></label>
-                            <input type="password" class="form-control" name="password" id="userPassword" required>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label class="form-label text-center"><b>Role</b></label>
-                            <select class="form-select" size="2" name="rolesId" multiple aria-label="rolesId" required>
-                                <option value="1 ADMIN">ADMIN</option>
-                                <option value="2 USER">USER</option>
-                            </select>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalEdit" tabindex="-1" aria-labelledby="ModalEdit" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
+                        <form class="modal-form" id="formEdit">
+                            <div class="form-group col-6 container-sm bg-white justify-content-center">
+                                <div class="modal-body">
+                                    <div class="form-group row mb-3">
+                                        <label for="userId" class="form-label text-center"><b>ID</b></label>
+                                        <input type="number" class="form-control" name="id" id="userId" readonly>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="userUsername" class="form-label text-center"><b>Username</b></label>
+                                        <input type="text" class="form-control" name="username" id="userUsername"
+                                               required>
+
+                                        <div class="form-group row mb-3">
+                                            <label for="userEmail" class="form-label text-center"><b>Email</b></label>
+                                            <input type="email" class="form-control" name="email" id="userEmail" min="0"
+                                                   required>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label for="userAge" class="form-label text-center"><b>Age</b></label>
+                                            <input type="number" class="form-control" name="age" id="userAge" required>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label for="userPassword"
+                                                   class="form-label text-center"><b>Password</b></label>
+                                            <input type="password" class="form-control" name="password"
+                                                   id="userPassword" required>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label class="form-label text-center"><b>Role</b></label>
+                                            <select class="form-select" size="2" name="rolesId" multiple
+                                                    aria-label="rolesId" required>
+                                                <option value="1 ADMIN">ADMIN</option>
+                                                <option value="2 USER">USER</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer ">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">Edit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                <div class="modal-footer ">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Edit</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-</div>
-
-<!-- Modal2 -->
-<div class="modal fade" id="ModalDelete" tabindex="-1" aria-labelledby="ModalDelete" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal-title">Delete user</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <form class="modal-form" id="formDelete">
-                <div class="form-group col-6 container-sm bg-white justify-content-center">
-                    <div class="modal-body">
-                        <div class="form-group row mb-3">
-                            <label for="userIdDelete" class="form-label text-center"><b>ID</b></label>
-                            <input type="number" class="form-control" name="id" id="userIdDelete" readonly >
+            <!-- Modal2 -->
+            <div class="modal fade" id="ModalDelete" tabindex="-1" aria-labelledby="ModalDelete" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title">Delete user</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="form-group row mb-3">
-                            <label for="userNameDelete" class="form-label text-center"><b>Username</b></label>
-                            <input type="text" class="form-control" name="username" id="userNameDelete" disabled>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userPasswordDelete" class="form-label text-center"><b>Password
-                              </b></label>
-                            <input type="text" class="form-control" name="password" id="userPasswordDelete" disabled>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userEmailDelete" class="form-label text-center"><b>Email</b></label>
-                            <input type="text" class="form-control" name="userEmail" id="userEmailDelete" disabled>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label for="userAgeDelete" class="form-label text-center"><b>Age</b></label>
-                            <input type="number" class="form-control" name="userAge" id="userAgeDelete"  disabled>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <label class="form-label text-center"><b>Role</b></label>
-                            <select class="form-select" size="2" name="rolesId" multiple aria-label="role" disabled>
-                                <option value="1">ADMIN</option>
-                                <option value="2">USER</option>
-                            </select>
-                        </div>
+
+                        <form class="modal-form" id="formDelete">
+                            <div class="form-group col-6 container-sm bg-white justify-content-center">
+                                <div class="modal-body">
+                                    <div class="form-group row mb-3">
+                                        <label for="userIdDelete" class="form-label text-center"><b>ID</b></label>
+                                        <input type="number" class="form-control" name="id" id="userIdDelete" readonly>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="userUsernameDelete"
+                                               class="form-label text-center"><b>Username</b></label>
+                                        <input type="text" class="form-control" name="username" id="userUsernameDelete"
+                                               disabled>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="userPasswordDelete" class="form-label text-center"><b>Password
+                                        </b></label>
+                                        <input type="text" class="form-control" name="password" id="userPasswordDelete"
+                                               disabled>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="userEmailDelete" class="form-label text-center"><b>Email</b></label>
+                                        <input type="text" class="form-control" name="userEmail" id="userEmailDelete"
+                                               disabled>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="userAgeDelete" class="form-label text-center"><b>Age</b></label>
+                                        <input type="number" class="form-control" name="userAge" id="userAgeDelete"
+                                               disabled>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="form-label text-center"><b>Role</b></label>
+                                        <select class="form-select" size="2" name="rolesId" multiple aria-label="role"
+                                                disabled>
+                                            <option value="1">ADMIN</option>
+                                            <option value="2">USER</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" id="deleteButton" class="btn btn-danger">Delete</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" id="deleteButton" class="btn btn-danger">Delete</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
